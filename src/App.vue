@@ -19,6 +19,27 @@
   <Suspense>
     <router-view class="m-2 border-2 p-2" />
   </Suspense>
+  <footer class="w-full h-52 bg-gradient-to-r from-pink-900 to-blue-800 flex flex-row items-end">
+    <div class="bg-gray-800 w-full h-48 flex items-center justify-center">
+      <div class="flex flex-col text-center justify-between h-32">
+        <routerlink>
+          <p class="font-Quick text-base text-white">
+            Mentions Légales
+          </p>
+        </routerlink>
+        <routerlink>
+          <p class="font-Quick text-base text-white">
+            Contact
+          </p>
+        </routerlink>
+        <routerlink>
+          <p class="font-Quick text-base text-white">
+            A propos
+          </p>
+        </routerlink>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script setup lang="ts">
