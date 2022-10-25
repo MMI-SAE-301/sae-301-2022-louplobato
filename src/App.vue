@@ -1,20 +1,21 @@
 <template>
-  <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
-    <ul>
-      <li>
-        <router-link class="text-red-600 underline" to="/">
-          lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
-        </router-link>
-      </li>
-    </ul>
-  </nav>
+  <header class="w-full h-20 bg-gradient-to-r from-pink-900 to-blue-800">
+    <div class="bg-gray-800 w-full h-16 justify-between flex px-7 items-center">
+      <routerlink>
+        <img src="../public/icons/LogoSVG.svg" alt="logo de tik tak">
+      </routerlink>
+      <routerlink>
+        <p class="underline text-white font-Quick">
+          Vos Montres
+        </p>
+      </routerlink>
+      <routerlink>
+        <img src="../public/icons/user.svg" alt="User" class="w-12 h-12">
+      </routerlink>
 
-  <!-- Affiche les pages -->
+
+    </div>
+  </header>
   <Suspense>
     <router-view class="m-2 border-2 p-2" />
   </Suspense>
