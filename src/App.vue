@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full h-20 bg-gradient-to-r from-pink-900 to-blue-800">
+  <header class="max-w-full h-20 bg-gradient-to-r from-pink-900 to-blue-800">
     <div class="bg-gray-800 w-full h-16 justify-between flex px-7 items-center">
       <routerlink>
         <img src="../public/icons/LogoSVG.svg" alt="logo de tik tak">
@@ -16,10 +16,8 @@
 
     </div>
   </header>
-  <Montre />
-  <bouton />
   <Suspense>
-    <router-view class="m-2 border-2 p-2" />
+    <router-view />
   </Suspense>
   <footer class="w-full h-52 bg-gradient-to-r from-pink-900 to-blue-800 flex flex-row items-end">
     <div class="bg-gray-800 w-full h-48 flex items-center justify-center">
@@ -45,6 +43,4 @@
 </template>
 
 <script setup lang="ts">
-import Montre from "@/components/MontreForm.vue"
-import bouton from "@/components/boutonCustom.vue"
 </script>
