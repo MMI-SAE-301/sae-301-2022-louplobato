@@ -11,18 +11,28 @@
             VOTRE MONTRE CONNECTÉ
         </p>
         <div class="flex justify-center items-center w-full gap-16">
-            <Montre class="-rotate-12 max-w-sm" />
+            <Montre bracelet="#E97A13" boitier="" lunette="" cornes="" class="-rotate-12 max-w-sm" />
             <Montre class="max-w-sm" />
-            <Montre class="rotate-12 max-w-sm" />
+            <Montre bracelet="#55B49D" boitier="#DDDDDD" lunette="#DDDDDD" cornes="#DDDDDD"
+                class="rotate-12 max-w-sm" />
         </div>
 
         <p class="text-2xl font-Quick mt-4">
             199€
         </p>
     </div>
+    <div>
+        <div>
+            <div>
+
+            </div>
+            <Bouton />
+        </div>
+    </div>
 </template>
 
 <script setup lang="ts">
 import Montre from "@/components/Montre.vue"
 import Bouton from "@/components/boutonCustom.vue"
+import { materiaux } from "@/types";
 </script>
