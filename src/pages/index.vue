@@ -21,13 +21,14 @@
             199€
         </p>
     </div>
-    <div>
-        <div>
-            <div class="flex flex-col">
+    <div class="flex my-40 gap-10 justify-center max-h-fit">
+        <Montre class="max-w-sm" />
+        <div class="flex flex-col items-end gap h-auto justify-between">
+            <div class="flex flex-col justify-start gap-5">
                 <p class="font-Quick text-5xl font-semibold">
                     TIK TAK
                 </p>
-                <p class="font-Quick text-4xl">
+                <p class="font-Quick text-4xl max-w-3xl">
                     La montre TiK TAK est votre Montre connectée. Personnalisez là à votre guise. Bracelet, lunette,
                     boitier, cornes. Tout est adaptable selon vos goûts !
                 </p>
@@ -37,7 +38,6 @@
             </div>
             <Bouton />
         </div>
-        <Montre class="max-w-sm" />
     </div>
 </template>
 
