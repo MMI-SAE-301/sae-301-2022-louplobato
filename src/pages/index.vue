@@ -44,7 +44,7 @@
     </div>
 
     <div>
-
+        <img src="../../public/svg/MagnetAttach.svg" alt="Magnet Attach Svg">
         <div>
             <p>
 
@@ -57,7 +57,6 @@
 </template>
 
 <script setup lang="ts">
-import Magnet from "../../public/svg/MagnetAttach.svg"
 import Montre from "@/components/Montre.vue"
 import Bouton from "@/components/boutonCustom.vue"
 import { materiaux } from "@/types";
