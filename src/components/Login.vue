@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { supabase, user } from "@/supabase";
-import nodeTest from "node:test";
+
+
 const newuser = ref(false);
 async function signIn(data, node) {
     const { user, error } = await (newuser.value

@@ -9,9 +9,9 @@
           Vos Montres
         </p>
       </routerlink>
-      <routerlink>
+      <router-link to="/loginview">
         <img src="../public/icons/user.svg" alt="User" class="w-12 h-12">
-      </routerlink>
+      </router-link>
 
 
     </div>
