@@ -57,9 +57,11 @@
     </div>
 
     <div>
-        <div>
-
-        </div>
+        <p>
+            Votre Tik Tak est Polyvalente. Elle est bien plus qu’un garde-temps classique. Votre montre vous accompagne
+            tous les jours et vous aide chaque fois que vous en avez besoin.
+        </p>
+        <Montre bracelet="#E97A13" boitier="" lunette="" cornes="" class="-rotate-12 max-w-sm" />
     </div>
 </template>
 
