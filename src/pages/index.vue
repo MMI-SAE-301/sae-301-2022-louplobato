@@ -23,8 +23,17 @@
     </div>
     <div>
         <div>
-            <div>
-
+            <div class="flex flex-col">
+                <p class="font-Quick text-5xl font-semibold">
+                    TIK TAK
+                </p>
+                <p class="font-Quick text-4xl">
+                    La montre TiK TAK est votre Montre connectée. Personnalisez là à votre guise. Bracelet, lunette,
+                    boitier, cornes. Tout est adaptable selon vos goûts ! s
+                </p>
+                <p class="font-Quick text-4xl">
+                    N'hésitez pas...
+                </p>
             </div>
             <Bouton />
         </div>
