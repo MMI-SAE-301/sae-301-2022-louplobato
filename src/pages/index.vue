@@ -29,7 +29,7 @@
                 </p>
                 <p class="font-Quick text-4xl">
                     La montre TiK TAK est votre Montre connectée. Personnalisez là à votre guise. Bracelet, lunette,
-                    boitier, cornes. Tout est adaptable selon vos goûts ! s
+                    boitier, cornes. Tout est adaptable selon vos goûts !
                 </p>
                 <p class="font-Quick text-4xl">
                     N'hésitez pas...
@@ -37,6 +37,7 @@
             </div>
             <Bouton />
         </div>
+        <Montre class="max-w-sm" />
     </div>
 </template>
 
