@@ -2,7 +2,7 @@
   <header class="max-w-full h-20 bg-gradient-to-r from-pink-900 to-blue-800">
     <div class="bg-gray-800 w-full h-16 justify-between flex px-7 items-center">
       <routerlink>
-        <img src="../public/icons/LogoSVG.svg" alt="logo de tik tak">
+        <img src="../public/icons/logoblanc.svg" alt="" class="w-12 h-12">
       </routerlink>
       <routerlink>
         <p class="underline text-white font-Quick">
