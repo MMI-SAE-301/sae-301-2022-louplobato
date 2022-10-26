@@ -17,6 +17,7 @@
     </div>
   </header>
   <Montre />
+  <bouton />
   <Suspense>
     <router-view class="m-2 border-2 p-2" />
   </Suspense>
@@ -45,4 +46,5 @@
 
 <script setup lang="ts">
 import Montre from "@/components/MontreForm.vue"
+import bouton from "@/components/boutonCustom.vue"
 </script>
