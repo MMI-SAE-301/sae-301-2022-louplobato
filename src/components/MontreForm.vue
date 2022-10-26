@@ -10,12 +10,16 @@ const gardetemps = ref<montre>(props.data ?? {});
 </script>
 
 <template>
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center ">
         <div class="mx-auto ">
-            <MontreSvg v-bind="gardetemps" id="montresvg" class="w-96" />
+            <MontreSvg v-bind="gardetemps" id="montresvg" class="w-96 " />
         </div>
-        <div class="w-1/2 drop bg-white drop-shadow-2xl h-full">
-            <FormKit type="form" v-model="gardetemps">
+        <div class="w-1/2 drop bg-white drop-shadow-2xl h-full flex flex-row justify-center">
+            <FormKit type="form" v-model="gardetemps" :submit-attrs="{
+                inputClass: 'bg-slate-900 text-white w-80 h-20 rounded-xl hover:bg-gradient-to-r from-pink-900 to-blue-800 font-Quick text-2xl mb-4 mt-4',
+                wrapperClass: '',
+                outerClass: ''
+            }">
                 <div class="flex flex-col items-center gap-3 ">
                     <div class="flex flex-col items-center">
                         <p class="my-6 font-Quick text-5xl">
@@ -27,7 +31,7 @@ const gardetemps = ref<montre>(props.data ?? {});
                             <template #label="context">
                                 <div class="flex flex-col items-center ">
                                     <div class="h-11 w-11 rounded-full border-2 peer-checked:border-grey-900"
-                                        :style="{ backgroundColor: context.options.value }">
+                                        :style="{ backgroundColor: context.option.value }">
                                     </div>
                                     <span class="font-Quick">{{ context.option.label }}</span>
                                 </div>
@@ -45,7 +49,7 @@ const gardetemps = ref<montre>(props.data ?? {});
                             <template #label="context">
                                 <div class="flex flex-col items-center ">
                                     <div class="h-11 w-11 rounded-full border-2 peer-checked:border-grey-900"
-                                        :style="{ backgroundColor: context.options.value }">
+                                        :style="{ backgroundColor: context.option.value }">
                                     </div>
                                     <span class="font-Quick">{{ context.option.label }}</span>
                                 </div>
@@ -62,7 +66,7 @@ const gardetemps = ref<montre>(props.data ?? {});
                             <template #label="context">
                                 <div class="flex flex-col items-center ">
                                     <div class="h-11 w-11 rounded-full border-2 peer-checked:border-grey-900"
-                                        :style="{ backgroundColor: context.options.value }">
+                                        :style="{ backgroundColor: context.option.value }">
                                     </div>
                                     <span class="font-Quick">{{ context.option.label }}</span>
                                 </div>
@@ -73,7 +77,8 @@ const gardetemps = ref<montre>(props.data ?? {});
                         <p class="my-6 font-Quick text-5xl">
                             BRACELET
                         </p>
-                        <FormKit name="bracelet" value="#FFFFFF" type="color" class="h-14" />
+                        <FormKit name="bracelet" value="#FFFFFF" type="color" class="h-14">
+                        </FormKit>
                     </div>
                 </div>
 
