@@ -63,6 +63,9 @@
         </p>
         <Montre bracelet="#E97A13" boitier="" lunette="" cornes="" class="rotate-12 max-w-sm" />
     </div>
+    <router-link to="/Personnalisation">
+        <Bouton class="mx-auto mb-40 " />
+    </router-link>
 </template>
 
 <script setup lang="ts">
