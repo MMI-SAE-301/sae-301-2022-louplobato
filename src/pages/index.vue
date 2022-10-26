@@ -47,10 +47,11 @@
         <img src="../../public/svg/MagnetAttach.svg" alt="Magnet Attach Svg">
         <div>
             <p>
-
+                MAGNET ATTACH
             </p>
             <p>
-
+                Votre Montre Tik Tak est équipée du système Magnet Attach qui permet une attache robuste et innovante du
+                bracelet. et une recharge simplifiée.
             </p>
         </div>
     </div>
