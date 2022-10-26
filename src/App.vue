@@ -1,9 +1,9 @@
 <template>
   <header class="max-w-full h-20 bg-gradient-to-r from-pink-900 to-blue-800">
     <div class="bg-gray-800 w-full h-16 justify-between flex px-7 items-center">
-      <routerlink>
+      <router-link to="/">
         <img src="../public/icons/logoblanc.svg" alt="" class="w-12 h-12">
-      </routerlink>
+      </router-link>
       <routerlink>
         <p class="underline text-white font-Quick">
           Vos Montres
