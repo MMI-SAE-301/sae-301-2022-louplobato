@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { supabase } from '@/supabase';
+import { useRouter } from 'vue-router';
 import { materiaux, type montre } from '@/types';
 import { ref } from 'vue';
 import MontreSvg from "./Montre.vue";
@@ -7,6 +9,28 @@ const props = defineProps<{
     id?: string
 }>();
 const gardetemps = ref<montre>(props.data ?? {});
+const router = useRouter();
+if (props.id) {
+    let { data, error } = await supabase
+        .from("Montre")
+        .select("*")
+        .eq("id", props.id);
+    if (error || !data)
+        console.log("n'a pas pu charger le table Montre:", error);
+    else gardetemps.value = data[0];
+}
+
+async function upsertMontre(dataForm, node) {
+    const { data, error } = await supabase.from("Montre").upsert(dataForm);
+    if (error) node.setErrors([error.message]);
+    else {
+        node.setErrors([]);
+        router.push({
+            name: "montre-edit-id",
+            params: { id: data[0].id_montre },
+        });
+    }
+}
 </script>
 
 <template>
@@ -19,7 +43,7 @@ const gardetemps = ref<montre>(props.data ?? {});
                 inputClass: 'bg-slate-900 text-white w-80 h-20 rounded-xl hover:bg-gradient-to-r from-pink-900 to-blue-800 font-Quick text-2xl mb-4 mt-4',
                 wrapperClass: '',
                 outerClass: ''
-            }">
+            }" @submit="upsertMontre">
                 <div class="flex flex-col items-center gap-3 ">
                     <div class="flex flex-col items-center">
                         <p class="my-6 font-Quick text-5xl">
