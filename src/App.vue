@@ -44,5 +44,5 @@
 </template>
 
 <script setup lang="ts">
-import Montre from "@/components/Montre.vue"
+import Montre from "@/components/MontreForm.vue"
 </script>

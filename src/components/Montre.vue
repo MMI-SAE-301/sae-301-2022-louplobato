@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Montre } from "@/types";
-withDefaults(defineProps<Montre>(), {
+import type { montre } from "@/types";
+withDefaults(defineProps<montre>(), {
     cornes: "#4B4B4C",
     lunette: "#4B4B4C",
     bracelet: "#4B4B4C",
@@ -53,34 +53,34 @@ withDefaults(defineProps<Montre>(), {
 
         <path id="BraceletHaut"
             d="M310.45,111.07H111.18V19.69C111.18,8.82,120.29,0,131.52,0H290.1c11.24,0,20.35,8.82,20.35,19.69Z"
-            class="bracelet" :fill="bracelet" />
+            class="bracelet stroke-black stroke-1" :fill="bracelet" />
         <path id="GradientBraceletHaut" class="cls-4"
             d="M310.45,111.07H111.18V19.69C111.18,8.82,120.29,0,131.52,0H290.1c11.24,0,20.35,8.82,20.35,19.69Z" />
         <path id="BraceletBas"
             d="M111.18,500V590.2c0,10.88,9.11,19.69,20.34,19.69H290.1c11.24,0,20.35-8.81,20.35-19.69V500.71A211.68,211.68,0,0,1,111.18,500Z"
-            class="bracelet" :fill="bracelet" />
+            class="bracelet stroke-black stroke-1" :fill="bracelet" />
         <path id="GradientBraceletBas" class="cls-5"
             d="M111.18,500V590.2c0,10.88,9.11,19.69,20.34,19.69H290.1c11.24,0,20.35-8.81,20.35-19.69V500.71A211.68,211.68,0,0,1,111.18,500Z" />
 
         <path id="boitier" d="M211.5,526.22a210.06,210.06,0,1,1,80.93-16A211.46,211.46,0,0,1,211.5,526.22Z"
-            class="boitier" :fill="boitier" />
+            class="boitier stroke-black stroke-1" :fill="boitier" />
         <path id="GradientBoitier" class="cls-7"
             d="M211.5,526.22a210.06,210.06,0,1,1,80.93-16A211.46,211.46,0,0,1,211.5,526.22Z" />
 
         <path id="lunette" d="M211.5,510.52a194.39,194.39,0,1,1,74.92-14.8A195.72,195.72,0,0,1,211.5,510.52Z"
-            class="lunette" :fill="lunette" />
+            class="lunette stroke-black stroke-1" :fill="lunette" />
         <path id="GradientLunette" class="cls-9"
             d="M211.5,510.52a194.39,194.39,0,1,1,74.92-14.8A195.72,195.72,0,0,1,211.5,510.52Z" />
 
         <path id="logo" class="cls-10"
             d="M211.49,122.79a7.6,7.6,0,0,0-6.74,11.11,7.61,7.61,0,1,0,12.32-8.69l-5.44,6.3-3.13-4.67" />
 
-        <path id="CorneDroite-2" data-name="CorneDroite" class="cornes" :fill="cornes"
+        <path id="CorneDroite-2" data-name="CorneDroite" class="cornes stroke-black stroke-1" :fill="cornes"
             d="M303.12,124.73c3.77-12.85,4.21-30.19,4.13-39.84a7,7,0,0,1,.52-2.76,7,7,0,0,1,1.54-2.35,7.08,7.08,0,0,1,5.09-2.11h10.66a7.15,7.15,0,0,1,7.15,7.1c.09,16.71,1,57.5,8,63.24" />
         <path id="GradientCorneDroite" class="cls-11"
             d="M303.12,124.73c3.77-12.85,4.21-30.19,4.13-39.84a7,7,0,0,1,.52-2.76,7,7,0,0,1,1.54-2.35,7.08,7.08,0,0,1,5.09-2.11h10.66a7.15,7.15,0,0,1,7.15,7.1c.09,16.71,1,57.5,8,63.24" />
 
-        <path id="CorneGauche-2" data-name="CorneGauche" class="cornes" :fill="cornes"
+        <path id="CorneGauche-2" data-name="CorneGauche" class="cornes stroke-black stroke-1" :fill="cornes"
             d="M118.51,124.73c-3.77-12.85-4.22-30.19-4.13-39.84a7.06,7.06,0,0,0-.53-2.76,7.16,7.16,0,0,0-6.63-4.46H96.57a7.15,7.15,0,0,0-7.16,7.1c-.1,16.71-1,57.5-8,63.24" />
         <path id="GradientCorneGauche" class="cls-12"
             d="M118.51,124.73c-3.77-12.85-4.22-30.19-4.13-39.84a7.06,7.06,0,0,0-.53-2.76,7.16,7.16,0,0,0-6.63-4.46H96.57a7.15,7.15,0,0,0-7.16,7.1c-.1,16.71-1,57.5-8,63.24" />
