@@ -8,6 +8,12 @@ module.exports = {
       "fontFamily": {
         "Quick": ["'Quicksand'", "sansserif"],
       },
+      "width": {
+        "1000": "1000px"
+      },
+      "height": {
+        "1000": "1000px"
+      }
     },
   },
   plugins: [
