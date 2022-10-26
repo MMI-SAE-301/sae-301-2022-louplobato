@@ -56,17 +56,16 @@
         </div>
     </div>
 
-    <div>
-        <p>
+    <div class="flex justify-center items-center gap-4 mt-40 mb-12">
+        <p class="font-Quick text-4xl max-w-2xl">
             Votre Tik Tak est Polyvalente. Elle est bien plus qu’un garde-temps classique. Votre montre vous accompagne
             tous les jours et vous aide chaque fois que vous en avez besoin.
         </p>
-        <Montre bracelet="#E97A13" boitier="" lunette="" cornes="" class="-rotate-12 max-w-sm" />
+        <Montre bracelet="#E97A13" boitier="" lunette="" cornes="" class="rotate-12 max-w-sm" />
     </div>
 </template>
 
 <script setup lang="ts">
 import Montre from "@/components/Montre.vue"
 import Bouton from "@/components/boutonCustom.vue"
-import { materiaux } from "@/types";
 </script>
