@@ -1,5 +1,5 @@
 <template>
-    <div class="shadow-lg max-w-full p-8 flex flex-col items-center gap-6">
+    <div class="shadow-2xl max-w-full p-8 flex flex-col items-center gap-6">
         <div class="flex items-center gap-4 ">
             <img src="../../public/icons/LogoSVG.svg" alt="logo svg
         ">
