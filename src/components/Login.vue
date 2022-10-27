@@ -8,12 +8,12 @@ const newuser = ref(false);
 
 async function logingoogle() {
     try {
-        const { user, session, error } = await supabase.auth.signIn({
+        const { user, error } = await supabase.auth.signIn({
             provider: 'google',
         });
         if (error) throw error;
     } catch (error) {
-        alert(error.error_description || error.message);
+        alert(error);
     }
 }
 
@@ -24,9 +24,10 @@ async function loginfacebook() {
         });
         if (error) throw error;
     } catch (error) {
-        alert(error.error_description || error.message);
+        alert(error);
     }
 }
+// @ts-ignore
 async function signIn(data, node) {
     const { user, error } = await (newuser.value
         ? supabase.auth.signUp(data)
