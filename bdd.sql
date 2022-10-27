@@ -2,22 +2,15 @@
 -- code pour la création des tables
 --
 
-CREATE TABLE materiaux (
-    id_materiaux uid,
-    libelle_materiaux text,
-    couleur_materiaux varchar,
-
-)
-
 CREATE TABLE Montre (
     id_montre uid,
-    Bracelet varchar,
-    Cornes uid,
-    Lunette uid,
-    Boitier uid,
+    Bracelet text,
+    Cornes text,
+    Lunette text,
+    Boitier text,
     id_user uid,
 
-    WHERE Cornes, Lunette, Boitier = materiaux.id_materiaux AND id_user = user.id
+    WHERE id_user = user.id
 )
 
 
@@ -28,9 +21,6 @@ CREATE TABLE Montre (
 --
 -- code pour la création des vues
 --
-Create view AllMateriaux as
-Select * from materiaux
-
 
 
 
@@ -38,14 +28,22 @@ Select * from materiaux
 -- code pour la création des policies
 --
 
-CREATE POLICY "Enable insert for authenticated users only" ON "public"."Montre"
+CREATE POLICY "Enable insert for users based on user_id" ON "public"."Montre"
 AS PERMISSIVE FOR INSERT
 TO authenticated
 
-WITH CHECK (true)
+WITH CHECK ((uid() = id_user))
 
-CREATE POLICY "Enable read access for all users" ON "public"."Montre"
+CREATE POLICY "Enable select for users based on user_id" ON "public"."Montre"
 AS PERMISSIVE FOR SELECT
 TO authenticated
-USING (true)
+
+WITH CHECK ((uid() = id_user))
+
+CREATE POLICY "Enable update for users based on user_id" ON "public"."Montre"
+AS PERMISSIVE FOR UPDATE
+TO authenticated
+
+WITH CHECK ((uid() = id_user))
+
 

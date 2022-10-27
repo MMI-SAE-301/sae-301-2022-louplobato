@@ -1,11 +1,11 @@
 # code de base pour TP (et future SAE 301)
 
-- **Nom :**
-- **Prénom :**
-- **URL maquette Figma:**
+- **Nom : LOBATO**
+- **Prénom : Loup**
+- **URL maquette Figma: https://www.figma.com/file/ghNvsh0I4D7jvmUMAVCx7Y/SAE-301-Maquette-Loup-LOBATO?node-id=0%3A1**
 - **URL publique du site :**
 - **URL projet Supabase :**
-  - [ ] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
+  - [ oui ] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
 # Auto-évaluation
 
@@ -13,9 +13,9 @@
 
 Vous avez rendu à la racine du projet :
 
-- [ ] Le modèle conceptuel de données (nom : [MCD.png](/MCD.png) ou [MCD.pdf](/MCD.pdf) [^1])
-- [ ] Et compléter le fichier [bdd.sql](/bdd.sql) détaillant le code pour la création des tables, vues et policies créées
-- [ ] Avez-vous bien invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase comme développeur ?
+- [  OUI ] Le modèle conceptuel de données (nom : [MCD.png](/MCD.png) ou [MCD.pdf](/MCD.pdf) [^1])
+- [ OUI sauf tables ] Et compléter le fichier [bdd.sql](/bdd.sql) détaillant le code pour la création des tables, vues et policies créées
+- [ OUI ] Avez-vous bien invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase comme développeur ?
 
 ## R312 | Intégrer ([Pierre Pracht : AC 2401](https://moodle.univ-fcomte.fr/mod/assign/view.php?id=612668))
 
@@ -31,20 +31,20 @@ Noté sur 40.
 - Code et Commit (0-2-4-6pts)
 - Code HTML spécifiquement sémantique et accessible (0-1-2pts)
 
-- [ ] usage de Classes utilitaires (1pt)
-  - lien vers sa définition
+- [ OUI ] usage de Classes utilitaires (1pt)
+  - lien vers sa définition 
   - lien vers son usage
-- [ ] Composants graphiques (0-1-2pts)
-  - liens
+- [ OUI  ] Composants graphiques (0-1-2pts)
+  - (/src/components) [liste des composants utilisés dans le site]
 - Technique CSS (0-1-2pts)
   - Quelles techniques (Eg. Styles graphiques (répétés) tous ajoutés par CSS et/ou
     config. Tailwind (eg. before/after avec content, background...))
-    - ...
-  - liens
+    - hover:bg pour certains composants
+  - (/src/components/boutonCustom.vue ) [:hover changement de background sur la majorités des boutons du site]
 - Mise en page CSS (0-1-2pts)
   - Quelles techniques (Grilles Flex...)
-    - ...
-  - liens
+    - Flex
+  - (/src/pages/index.vue ligne 2)[utilisation de flex]
   - [ ] Mise en page fluide
 - [ ] Mobile First (0-1-2pts)
   - [ ] Plusieurs tailles
@@ -53,10 +53,12 @@ Noté sur 40.
   - [ ] Simple usage de 'dark:'
   - [ ] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
     - liens
-- "tailwin.config.js" (0-1-2pts)
-  - [ ] usage basique couleurs/fonts
-  - [ ] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
-    - liens
+- "tailwind.config.js" (0-1-2pts)
+  - [ OUI ] usage basique couleurs/fonts
+  - [ OUI ] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
+    - (/src/App.vue) utilisation des couleurs et des fonts pour le header et le footer
+    (/src/pages/index.vue ligne 46) utilisation de valeurs personnalisés pour les bandeaux de la page d'accueil
+
 - Composants "accessibles" (0-1-2pts)
   - [ ] textes "accessibles" (eg. 'sr-only')
   - [ ] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)
