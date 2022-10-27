@@ -40,7 +40,7 @@ async function upsertMontre(dataForm, node) {
             <MontreSvg v-bind="gardetemps" id="montresvg" class="w-96 " />
         </div>
         <div class="w-1/2 drop bg-white drop-shadow-2xl h-full flex flex-row justify-center">
-            <FormKit type="form" v-model="gardetemps" :submit-attrs="{
+            <FormKit type="form" v-model="gardetemps" submit-label="Enregistrer" :submit-attrs="{
                 inputClass: 'bg-slate-900 text-white w-80 h-20 rounded-xl hover:bg-gradient-to-r from-pink-900 to-blue-800 font-Quick text-2xl mb-4 mt-4',
                 wrapperClass: '',
                 outerClass: ''
