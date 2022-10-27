@@ -16,12 +16,20 @@ async function signIn(data, node) {
 }
 </script>
 <template>
-    <button v-if="user" @pointerdown="supabase.auth.signOut()">
-        Se déconnecter({{ user.email }})</button>
+    <div class="max-w-4xl mx-auto flex items-center justify-center shadow-xl my-28">
+        <button v-if="user" @pointerdown="supabase.auth.signOut()"
+            class="bg-gray-800 h-20 text-white font-Quick w-72 rounded-lg hover:bg-gradient-to-r from-pink-900 to-blue-800 mb-96 mt-16">
+            <p>
+                Se Déconnecter
+            </p>
+            ({{ user.email }})
+        </button>
 
-    <FormKit v-else type="form" :submit-label="newuser ? 'S\'inscrire' : 'Se connecter'" @submit="signIn">
-        <FormKit name="email" label="Email" type="email" placeholder="blabla@exemple.fr" />
-        <FormKit name="password" label="Mot de passe" type="password" />
-        <FormKit label="Nouvel utilisateur ?" name="newuser" type="checkbox" v-model="newuser" />
-    </FormKit>
+        <FormKit v-else type="form" :submit-label="newuser ? 'S\'inscrire' : 'Se connecter'" @submit="signIn">
+            <FormKit name="email" label="Email" type="email" placeholder="blabla@exemple.fr" />
+            <FormKit name="password" label="Mot de passe" type="password" />
+            <FormKit label="Nouvel utilisateur ?" name="newuser" type="checkbox" v-model="newuser" />
+        </FormKit>
+    </div>
+
 </template>

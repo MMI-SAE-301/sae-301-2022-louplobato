@@ -19,7 +19,7 @@
   <Suspense>
     <router-view />
   </Suspense>
-  <footer class="w-full h-52 bg-gradient-to-r from-pink-900 to-blue-800 flex flex-row items-end">
+  <footer class="w-full h-52  bg-gradient-to-r from-pink-900 to-blue-800 flex flex-row items-end">
     <div class="bg-gray-800 w-full h-48 flex items-center justify-center">
       <div class="flex flex-col text-center justify-between h-32">
         <routerlink>
