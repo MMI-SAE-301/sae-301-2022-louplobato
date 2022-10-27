@@ -66,11 +66,10 @@ Noté sur 40.
   - [ ] Connexion avec Google
   - [ ] Connexion avec Facebook
   
-  
 - Déploiement sur le web
   - [ ] Déploiement sur Netlify
  
- - Gestion du compromis SEO/UX
+- Gestion du compromis SEO/UX
   - [ ] Déploiement sur Heroku
   - [ ] Redirection des moteurs de recherche Google et Bing vers une version pré-rendu du site
 
