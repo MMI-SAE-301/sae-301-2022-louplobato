@@ -61,4 +61,18 @@ Noté sur 40.
   - [ ] textes "accessibles" (eg. 'sr-only')
   - [ ] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)
 
+## R313 | Dep. Services (Hakim Mabed)
+- Authentification et connexion
+  - [ ] Connexion avec Google
+  - [ ] Connexion avec Facebook
+  
+  
+- Déploiement sur le web
+  - [ ] Déploiement sur Netlify
+ 
+ - Gestion du compromis SEO/UX
+  - [ ] Déploiement sur Heroku
+  - [ ] Redirection des moteurs de recherche Google et Bing vers une version pré-rendu du site
+
+
 [^1]: Supprimez les mentions inutiles.
