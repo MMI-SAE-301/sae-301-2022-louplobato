@@ -4,11 +4,11 @@
       <router-link to="/">
         <img src="../public/icons/logoblanc.svg" alt="" class="w-12 h-12">
       </router-link>
-      <routerlink>
+      <router-link to="/listemontre">
         <p class="underline text-white font-Quick">
           Vos Montres
         </p>
-      </routerlink>
+      </router-link>
       <router-link to="/loginview">
         <img src="../public/icons/user.svg" alt="User" class="w-12 h-12">
       </router-link>
