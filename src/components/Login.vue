@@ -27,13 +27,13 @@ async function signIn(data, node) {
 
         <FormKit v-else type="form" :submit-label="newuser ? 'S\'inscrire' : 'Se connecter'" @submit="signIn"
             :submit-attrs="{
-                inputClass: 'bg-slate-900 text-white w-80 h-20 rounded-xl hover:bg-gradient-to-r from-pink-900 to-blue-800 font-Quick text-2xl mb-4 mt-4',
+                inputClass: 'bg-slate-900 text-white w-80 h-20 rounded-xl hover:bg-gradient-to-r from-pink-900 to-blue-800 font-Quick text-2xl mb-4 mt-4 ',
                 wrapperClass: '',
                 outerClass: ''
             }" :config="{
     classes: {
         input:
-            'p-1  border-b-2 ',
+            'p-1  border-b-2 no-outline border-gray-800',
         label: '',
         form: 'flex flex-col items center gap-3 mb-40',
     },
