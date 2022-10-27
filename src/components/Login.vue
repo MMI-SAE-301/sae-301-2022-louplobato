@@ -47,7 +47,7 @@ async function signIn(data, node) {
         input:
             'p-1  border-b-2 no-outline border-gray-800',
         label: '',
-        form: 'flex flex-col items center gap-3 mb-40',
+        form: 'flex flex-col items center gap-3 ',
     },
 }">
             <FormKit name="email" type="email" placeholder="Votre Email" input-class="w-full rounded sm h-14" />
