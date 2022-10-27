@@ -17,18 +17,32 @@ async function signIn(data, node) {
 </script>
 <template>
     <div class="max-w-4xl mx-auto flex items-center justify-center shadow-xl my-28">
-        <button v-if="user" @pointerdown="supabase.auth.signOut()"
-            class="bg-gray-800 h-20 text-white font-Quick w-72 rounded-lg hover:bg-gradient-to-r from-pink-900 to-blue-800 mb-96 mt-16">
+        <button v-if="user" @pointerdown="supabase.auth.signOut()" class="bg-gray-800 h-20 text-white font-Quick w-72 rounded-lg hover:bg-gradient-to-r from-pink-900 to-blue-800 mb-96 mt-16
+            ">
             <p>
                 Se Déconnecter
             </p>
             ({{ user.email }})
         </button>
 
-        <FormKit v-else type="form" :submit-label="newuser ? 'S\'inscrire' : 'Se connecter'" @submit="signIn">
-            <FormKit name="email" label="Email" type="email" placeholder="blabla@exemple.fr" />
-            <FormKit name="password" label="Mot de passe" type="password" />
-            <FormKit label="Nouvel utilisateur ?" name="newuser" type="checkbox" v-model="newuser" />
+        <FormKit v-else type="form" :submit-label="newuser ? 'S\'inscrire' : 'Se connecter'" @submit="signIn"
+            :submit-attrs="{
+                inputClass: 'bg-slate-900 text-white w-80 h-20 rounded-xl hover:bg-gradient-to-r from-pink-900 to-blue-800 font-Quick text-2xl mb-4 mt-4',
+                wrapperClass: '',
+                outerClass: ''
+            }" :config="{
+    classes: {
+        input:
+            'p-1  border-b-2 ',
+        label: '',
+        form: 'flex flex-col items center gap-3 mb-40',
+    },
+}">
+            <FormKit name="email" type="email" placeholder="Votre Email" input-class="w-full rounded sm h-14" />
+            <FormKit name="password" type="password" placeholder="Mot de Passe" outer-class="mb-10"
+                input-class="w-full rounded sm h-14" />
+            <FormKit label="Nouvel utilisateur ?" name="newuser" type="checkbox" v-model="newuser"
+                input-class="w-10 rounded-full " label-class="font-Quick" />
         </FormKit>
     </div>
 
