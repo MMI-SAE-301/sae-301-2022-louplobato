@@ -3,8 +3,8 @@
 - **Nom : LOBATO**
 - **Prénom : Loup**
 - **URL maquette Figma: https://www.figma.com/file/ghNvsh0I4D7jvmUMAVCx7Y/SAE-301-Maquette-Loup-LOBATO?node-id=0%3A1**
-- **URL publique du site :**
-- **URL projet Supabase :**
+- **URL publique du site : https://gleaming-hotteok-a71c7f.netlify.app**
+- **URL projet Supabase : https://app.supabase.com/project/ntucszhphomebzcmllrg**
   - [ oui ] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
 # Auto-évaluation
