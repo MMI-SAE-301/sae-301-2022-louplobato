@@ -16,6 +16,17 @@ async function logingoogle() {
         alert(error.error_description || error.message);
     }
 }
+
+async function loginfacebook() {
+    try {
+        const { user, session, error } = await supabase.auth.signIn({
+            provider: 'facebook',
+        });
+        if (error) throw error;
+    } catch (error) {
+        alert(error.error_description || error.message);
+    }
+}
 async function signIn(data, node) {
     const { user, error } = await (newuser.value
         ? supabase.auth.signUp(data)
@@ -60,6 +71,12 @@ async function signIn(data, node) {
             class="bg-slate-900 text-white w-80 h-20 rounded-xl hover:bg-gradient-to-r from-pink-900 to-blue-800 font-Quick text-2xl mb-4 mt-4">
             <p class="font-Quick">
                 Connection via Google
+            </p>
+        </button>
+        <button @click="loginfacebook"
+            class="bg-slate-900 text-white w-80 h-20 rounded-xl hover:bg-gradient-to-r from-pink-900 to-blue-800 font-Quick text-2xl mb-4 mt-4">
+            <p class="font-Quick">
+                Connection via Facebook
             </p>
         </button>
     </div>
