@@ -4,6 +4,18 @@ import { supabase, user } from "@/supabase";
 
 
 const newuser = ref(false);
+
+
+async function logingoogle() {
+    try {
+        const { user, session, error } = await supabase.auth.signIn({
+            provider: 'google',
+        });
+        if (error) throw error;
+    } catch (error) {
+        alert(error.error_description || error.message);
+    }
+}
 async function signIn(data, node) {
     const { user, error } = await (newuser.value
         ? supabase.auth.signUp(data)
@@ -13,10 +25,10 @@ async function signIn(data, node) {
         console.error(error);
         node.setErrors([error.message]);
     }
-}
+};
 </script>
 <template>
-    <div class="max-w-4xl mx-auto flex items-center justify-center shadow-xl my-28">
+    <div class="max-w-4xl mx-auto flex flex-col items-center justify-center shadow-xl my-28">
         <button v-if="user" @pointerdown="supabase.auth.signOut()" class="bg-gray-800 h-20 text-white font-Quick w-72 rounded-lg hover:bg-gradient-to-r from-pink-900 to-blue-800 mb-96 mt-16
             ">
             <p>
@@ -44,6 +56,12 @@ async function signIn(data, node) {
             <FormKit label="Nouvel utilisateur ?" name="newuser" type="checkbox" v-model="newuser"
                 input-class="w-10 rounded-full " label-class="font-Quick" />
         </FormKit>
+        <button @click="logingoogle"
+            class="bg-slate-900 text-white w-80 h-20 rounded-xl hover:bg-gradient-to-r from-pink-900 to-blue-800 font-Quick text-2xl mb-4 mt-4">
+            <p class="font-Quick">
+                Connection via Google
+            </p>
+        </button>
     </div>
 
 </template>
