@@ -65,11 +65,11 @@ Noté sur 40.
 
 ## R313 | Dep. Services (Hakim Mabed)
 - Authentification et connexion
-  - [ ] Connexion avec Google
-  - [ ] Connexion avec Facebook
+  - [ OUI ] Connexion avec Google
+  - [ OUI ] Connexion avec Facebook
   
 - Déploiement sur le web
-  - [ ] Déploiement sur Netlify
+  - [ OUI] Déploiement sur Netlify
  
 - Gestion du compromis SEO/UX
   - [ ] Déploiement sur Heroku
